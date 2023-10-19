@@ -43,8 +43,8 @@ button:hover {
 }
 
 .section {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 /* ==============top_bar============== */
@@ -123,6 +123,7 @@ button:hover {
 .headingH2 {
   margin-bottom: 1.5rem;
 }
+
 .headingH2 .txt_ttl {
   font-size: 3rem;
   font-weight: 500;
@@ -141,45 +142,245 @@ button:hover {
   height: 20px;
   padding-top: 0;
 }
+
 .txt_lead {
   font-size: 1.5rem;
   text-align: center;
   color: #1e1e11;
   margin-bottom: 2rem;
 }
+
 /* ==============service============== */
-.list_service .item {
+.service {
+  background: #F4F7FC;
+}
+
+.box_service .item {
   width: 25%;
   padding-top: 3rem;
 }
-.list_service .item ._image {
+
+.box_service .item ._image {
   width: 23rem;
   margin: auto;
   padding-bottom: 3rem;
 }
-.list_service .item ._image:hover img {
+
+.box_service .item ._image:hover img {
   transform: scale(1.1);
 }
-.list_service .item ._text a {
+
+.box_service .item ._text a {
   font-size: 1.8rem;
   color: #fff;
   text-align: center;
   padding: 2rem 1rem;
   display: block;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
+
 .bg_01 {
   background: rgb(33, 90, 148);
 }
+
 .bg_02 {
   background: rgb(86, 174, 227);
 }
+
 .bg_03 {
   background: rgb(139, 172, 36);
 }
+
 .bg_04 {
   background: rgb(161, 198, 39);
 }
+
+.list_service {
+  margin-left: -3rem;
+  padding: 3rem 0;
+}
+
+.list_service .item {
+  width: calc(33% - 3rem);
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.list_service .item ._image {
+  width: 8rem;
+  margin-right: 1.6rem;
+}
+
+.list_service .item ._text {
+  width: calc(100% - 9.6rem);
+}
+
+.headingH3 ._ttl {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #272da5;
+  margin-bottom: 1rem;
+}
+
+.headingH3 ._txt {
+  font-size: 1.4rem;
+  color: #1e1e1e;
+}
+
+.btn-wrap {
+  text-align: center;
+  justify-content: center;
+}
+
+.btn-wrap .btn {
+  font-size: 1.4rem;
+  min-width: 20.2rem;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  border-radius: 3rem;
+  padding: 1rem 0;
+}
+
+.btn-wrap .btn+.btn {
+  margin-left: 1rem;
+}
+
+.btn-wrap .btn01 {
+  background: #0073ce;
+}
+
+.btn-wrap .btn02 {
+  background: #272da5;
+}
+
+.btn-wrap .btn03 {
+  background: #8BC34A;
+}
+
+/* ==============why============== */
+.why {
+  background: #fff url(../images/bg_why.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.box_why {
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.box_why .list_item {
+  width: calc(100% - 45.7rem);
+  padding: 0 2rem;
+}
+
+.box_why .list_item .item {
+  justify-content: space-between;
+}
+
+.box_why .list_item .item+.item {
+  margin-top: 2rem;
+}
+
+.box_why .item_image {
+  width: calc(457/1200*100%);
+}
+
+.box_why .item ._icon {
+  width: 8.4rem;
+}
+
+.box_why .item .headingH3 {
+  width: calc(100% - 10rem);
+}
+
+/* ==============request============== */
+.request {
+  background: #F4F7FC !important;
+}
+
+.c-white {
+  color: #fff !important;
+}
+
+/* ==============capacity============== */
+.capacity {
+  background: #272da5;
+
+}
+
+.box_capacity {
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.box_capacity .item {
+  width: calc((100% - 3rem) / 3);
+  text-align: center;
+}
+
+.box_capacity .item ._ttl {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+}
+
+.box_capacity .item p {
+  font-size: 1.8rem;
+  color: #addcff;
+}
+
+/* ==============template============== */
+.list_temp {
+  margin-left: -2rem;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+}
+
+.list_temp .item {
+  width: calc(33% - 2rem);
+  margin-left: 2rem;
+  margin-top: 2rem;
+  box-shadow: 2px 2px 20px grey;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  position: relative;
+}
+
+.list_temp .item:hover .over-back {
+  opacity: 1;
+}
+
+.list_temp .item .over-back {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+.list_temp .item .over-back a:hover {
+  opacity: 0.9;
+}
+
+.list_temp .item .over-back p {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.list_temp .btn-wrap .btn {
+  min-width: 13.9rem;
+}
+
 @media screen and(min-width: 1024px) {
   .is_sp {
     display: none !important;
